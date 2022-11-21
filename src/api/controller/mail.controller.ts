@@ -5,8 +5,8 @@ var transporter = nodemailer.createTransport({
   service: "gmail",
   port: 587,
   auth: {
-    user: "halkstar12@gmail.com",
-    pass: "kfdzdpjnibbnuyet",
+    user: "mail.codehimalaya@gmail.com",
+    pass: "ujlemttdpqfitsnc",
   },
 });
 
@@ -22,7 +22,7 @@ export const sendMailController = async (
 ) => {
   const { email, subject, text } = req.body;
   const mailOptions = {
-    from: `halkstar12@gmail.com`,
+    from: `LegalAid@gmail.com`,
     to: email,
     subject: subject,
     text: text,
